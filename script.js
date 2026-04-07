@@ -1,14 +1,19 @@
-function getFormvalue() {
+function getFormvalue(event) {
     //Write your code here
-	event.preventDefault();
+  
+      event.preventDefault();
 
+      
       const form = document.getElementById("loginForm");
 
+     
       const firstName = form.fname.value.trim();
       const lastName = form.lname.value.trim();
 
+     
       const fullName = [firstName, lastName].filter(Boolean).join(" ");
 
+      
       alert(fullName);
     }
 
